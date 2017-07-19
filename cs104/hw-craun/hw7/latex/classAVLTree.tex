@@ -1,0 +1,52 @@
+\hypertarget{classAVLTree}{\section{A\-V\-L\-Tree$<$ Key, Value $>$ Class Template Reference}
+\label{classAVLTree}\index{A\-V\-L\-Tree$<$ Key, Value $>$@{A\-V\-L\-Tree$<$ Key, Value $>$}}
+}
+
+
+{\ttfamily \#include $<$avlbst.\-h$>$}
+
+Inheritance diagram for A\-V\-L\-Tree$<$ Key, Value $>$\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classAVLTree}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classAVLTree_a7a133667454794bc8fe84beb91fc7f9a}{insert} (const std\-::pair$<$ Key, Value $>$ \&key\-Value\-Pair) override
+\item 
+virtual void \hyperlink{classAVLTree_a52c0c85de9cbd8f0d30853fc8a853014}{erase} (const Key \&key)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Key, class Value$>$class A\-V\-L\-Tree$<$ Key, Value $>$}
+
+A templated balanced binary search tree implemented as an A\-V\-L tree. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classAVLTree_a52c0c85de9cbd8f0d30853fc8a853014}{\index{A\-V\-L\-Tree@{A\-V\-L\-Tree}!erase@{erase}}
+\index{erase@{erase}!AVLTree@{A\-V\-L\-Tree}}
+\subsubsection[{erase}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Key , typename Value $>$ void {\bf A\-V\-L\-Tree}$<$ Key, Value $>$\-::erase (
+\begin{DoxyParamCaption}
+\item[{const Key \&}]{key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classAVLTree_a52c0c85de9cbd8f0d30853fc8a853014}
+Erase function for a given key. Finds the node, reattaches pointers, and then balances when finished. \hypertarget{classAVLTree_a7a133667454794bc8fe84beb91fc7f9a}{\index{A\-V\-L\-Tree@{A\-V\-L\-Tree}!insert@{insert}}
+\index{insert@{insert}!AVLTree@{A\-V\-L\-Tree}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Key , typename Value $>$ void {\bf A\-V\-L\-Tree}$<$ Key, Value $>$\-::insert (
+\begin{DoxyParamCaption}
+\item[{const std\-::pair$<$ Key, Value $>$ \&}]{key\-Value\-Pair}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}}\label{classAVLTree_a7a133667454794bc8fe84beb91fc7f9a}
+Insert function for a key value pair. Finds location to insert the node and then balances the tree. 
+
+Reimplemented from \hyperlink{classBinarySearchTree_af78f03f88b44453dc2e35278c49b2965}{Binary\-Search\-Tree$<$ Key, Value $>$}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+avlbst.\-h\end{DoxyCompactItemize}

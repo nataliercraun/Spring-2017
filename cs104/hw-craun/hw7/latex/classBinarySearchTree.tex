@@ -1,0 +1,134 @@
+\hypertarget{classBinarySearchTree}{\section{Binary\-Search\-Tree$<$ Key, Value $>$ Class Template Reference}
+\label{classBinarySearchTree}\index{Binary\-Search\-Tree$<$ Key, Value $>$@{Binary\-Search\-Tree$<$ Key, Value $>$}}
+}
+
+
+{\ttfamily \#include $<$bst.\-h$>$}
+
+Inheritance diagram for Binary\-Search\-Tree$<$ Key, Value $>$\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classBinarySearchTree}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classBinarySearchTree_1_1iterator}{iterator}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBinarySearchTree_ad755ed0485364094f462ce45cf6ecf62}{Binary\-Search\-Tree} ()
+\item 
+virtual void \hyperlink{classBinarySearchTree_af78f03f88b44453dc2e35278c49b2965}{insert} (const std\-::pair$<$ Key, Value $>$ \&key\-Value\-Pair)
+\item 
+void \hyperlink{classBinarySearchTree_acce1030d8eb99522591b90e0824e7bbc}{clear} ()
+\item 
+\hypertarget{classBinarySearchTree_af2f724b66e0da79f2d65144824224c97}{void {\bfseries print} () const }\label{classBinarySearchTree_af2f724b66e0da79f2d65144824224c97}
+
+\item 
+\hyperlink{classBinarySearchTree_1_1iterator}{iterator} \hyperlink{classBinarySearchTree_ac42b6e11e290cf9eaf56eba56ca56818}{begin} ()
+\item 
+\hyperlink{classBinarySearchTree_1_1iterator}{iterator} \hyperlink{classBinarySearchTree_a6603b43057a4bf2843381b8abcb0d010}{end} ()
+\item 
+\hyperlink{classBinarySearchTree_1_1iterator}{iterator} \hyperlink{classBinarySearchTree_a43958308bfdd55c71cb926d32816f3c1}{find} (const Key \&key) const 
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classBinarySearchTree_a86747f59a7d863080da23a74bea8ed1c}{\hyperlink{classNode}{Node}$<$ Key, Value $>$ $\ast$ {\bfseries m\-Root}}\label{classBinarySearchTree_a86747f59a7d863080da23a74bea8ed1c}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classNode}{Node}$<$ Key, Value $>$ $\ast$ \hyperlink{classBinarySearchTree_af7b5e0c65afb9034c2363a6f6a132e39}{internal\-Find} (const Key \&key) const 
+\item 
+void \hyperlink{classBinarySearchTree_a45a1345e1d2bd7a2a0fdec9298ef8c18}{print\-Root} (\hyperlink{classNode}{Node}$<$ Key, Value $>$ $\ast$root) const 
+\item 
+void \hyperlink{classBinarySearchTree_ad32ddc43ed2e2464cc0eb6449d2dac40}{delete\-All} (\hyperlink{classNode}{Node}$<$ Key, Value $>$ $\ast$root)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Key, typename Value$>$class Binary\-Search\-Tree$<$ Key, Value $>$}
+
+A templated unbalanced binary search tree. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBinarySearchTree_ad755ed0485364094f462ce45cf6ecf62}{\index{Binary\-Search\-Tree@{Binary\-Search\-Tree}!Binary\-Search\-Tree@{Binary\-Search\-Tree}}
+\index{Binary\-Search\-Tree@{Binary\-Search\-Tree}!BinarySearchTree@{Binary\-Search\-Tree}}
+\subsubsection[{Binary\-Search\-Tree}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Key , typename Value $>$ {\bf Binary\-Search\-Tree}$<$ Key, Value $>$\-::{\bf Binary\-Search\-Tree} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classBinarySearchTree_ad755ed0485364094f462ce45cf6ecf62}
+Default constructor for a \hyperlink{classBinarySearchTree}{Binary\-Search\-Tree}, which sets the root to N\-U\-L\-L. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classBinarySearchTree_ac42b6e11e290cf9eaf56eba56ca56818}{\index{Binary\-Search\-Tree@{Binary\-Search\-Tree}!begin@{begin}}
+\index{begin@{begin}!BinarySearchTree@{Binary\-Search\-Tree}}
+\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Key , typename Value $>$ {\bf Binary\-Search\-Tree}$<$ Key, Value $>$\-::{\bf iterator} {\bf Binary\-Search\-Tree}$<$ Key, Value $>$\-::begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classBinarySearchTree_ac42b6e11e290cf9eaf56eba56ca56818}
+Returns an iterator to the \char`\"{}smallest\char`\"{} item in the tree \hypertarget{classBinarySearchTree_acce1030d8eb99522591b90e0824e7bbc}{\index{Binary\-Search\-Tree@{Binary\-Search\-Tree}!clear@{clear}}
+\index{clear@{clear}!BinarySearchTree@{Binary\-Search\-Tree}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Key , typename Value $>$ void {\bf Binary\-Search\-Tree}$<$ Key, Value $>$\-::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classBinarySearchTree_acce1030d8eb99522591b90e0824e7bbc}
+A method to remove all contents of the tree and reset the values in the tree for use again. \hypertarget{classBinarySearchTree_ad32ddc43ed2e2464cc0eb6449d2dac40}{\index{Binary\-Search\-Tree@{Binary\-Search\-Tree}!delete\-All@{delete\-All}}
+\index{delete\-All@{delete\-All}!BinarySearchTree@{Binary\-Search\-Tree}}
+\subsubsection[{delete\-All}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Key, typename Value$>$ void {\bf Binary\-Search\-Tree}$<$ Key, Value $>$\-::delete\-All (
+\begin{DoxyParamCaption}
+\item[{{\bf Node}$<$ Key, Value $>$ $\ast$}]{root}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classBinarySearchTree_ad32ddc43ed2e2464cc0eb6449d2dac40}
+Helper function to delete all the items \hypertarget{classBinarySearchTree_a6603b43057a4bf2843381b8abcb0d010}{\index{Binary\-Search\-Tree@{Binary\-Search\-Tree}!end@{end}}
+\index{end@{end}!BinarySearchTree@{Binary\-Search\-Tree}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Key , typename Value $>$ {\bf Binary\-Search\-Tree}$<$ Key, Value $>$\-::{\bf iterator} {\bf Binary\-Search\-Tree}$<$ Key, Value $>$\-::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classBinarySearchTree_a6603b43057a4bf2843381b8abcb0d010}
+Returns an iterator whose value means I\-N\-V\-A\-L\-I\-D \hypertarget{classBinarySearchTree_a43958308bfdd55c71cb926d32816f3c1}{\index{Binary\-Search\-Tree@{Binary\-Search\-Tree}!find@{find}}
+\index{find@{find}!BinarySearchTree@{Binary\-Search\-Tree}}
+\subsubsection[{find}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Key, typename Value $>$ {\bf Binary\-Search\-Tree}$<$ Key, Value $>$\-::{\bf iterator} {\bf Binary\-Search\-Tree}$<$ Key, Value $>$\-::find (
+\begin{DoxyParamCaption}
+\item[{const Key \&}]{key}
+\end{DoxyParamCaption}
+) const}}\label{classBinarySearchTree_a43958308bfdd55c71cb926d32816f3c1}
+Returns an iterator to the item with the given key, k or the end iterator if k does not exist in the tree \hypertarget{classBinarySearchTree_af78f03f88b44453dc2e35278c49b2965}{\index{Binary\-Search\-Tree@{Binary\-Search\-Tree}!insert@{insert}}
+\index{insert@{insert}!BinarySearchTree@{Binary\-Search\-Tree}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Key, typename Value$>$ void {\bf Binary\-Search\-Tree}$<$ Key, Value $>$\-::insert (
+\begin{DoxyParamCaption}
+\item[{const std\-::pair$<$ Key, Value $>$ \&}]{key\-Value\-Pair}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classBinarySearchTree_af78f03f88b44453dc2e35278c49b2965}
+An insert method to insert into a Binary Search Tree. The tree will not remain balanced when inserting. Implementing this will help you test your iterator, but is not necessary\-: if you don't implement it, then you can put your entire insert implementation in \hyperlink{avlbst_8h_source}{avlbst.\-h} 
+
+Reimplemented in \hyperlink{classAVLTree_a7a133667454794bc8fe84beb91fc7f9a}{A\-V\-L\-Tree$<$ Key, Value $>$}.
+
+\hypertarget{classBinarySearchTree_af7b5e0c65afb9034c2363a6f6a132e39}{\index{Binary\-Search\-Tree@{Binary\-Search\-Tree}!internal\-Find@{internal\-Find}}
+\index{internal\-Find@{internal\-Find}!BinarySearchTree@{Binary\-Search\-Tree}}
+\subsubsection[{internal\-Find}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Key, typename Value $>$ {\bf Node}$<$ Key, Value $>$ $\ast$ {\bf Binary\-Search\-Tree}$<$ Key, Value $>$\-::internal\-Find (
+\begin{DoxyParamCaption}
+\item[{const Key \&}]{key}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}}\label{classBinarySearchTree_af7b5e0c65afb9034c2363a6f6a132e39}
+Helper function to find a node with given key, k and return a pointer to it or N\-U\-L\-L if no item with that key exists \hypertarget{classBinarySearchTree_a45a1345e1d2bd7a2a0fdec9298ef8c18}{\index{Binary\-Search\-Tree@{Binary\-Search\-Tree}!print\-Root@{print\-Root}}
+\index{print\-Root@{print\-Root}!BinarySearchTree@{Binary\-Search\-Tree}}
+\subsubsection[{print\-Root}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Key, typename Value$>$ void {\bf Binary\-Search\-Tree}$<$ Key, Value $>$\-::print\-Root (
+\begin{DoxyParamCaption}
+\item[{{\bf Node}$<$ Key, Value $>$ $\ast$}]{root}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}}\label{classBinarySearchTree_a45a1345e1d2bd7a2a0fdec9298ef8c18}
+Helper function to print the tree's contents 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+bst.\-h\end{DoxyCompactItemize}

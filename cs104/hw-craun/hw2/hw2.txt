@@ -1,0 +1,72 @@
+Natalie Craun 
+ID: 5986500254 
+
+Problem 1
+
+   Part (a) 
+
+      untracked 
+      
+   Part (b) 
+
+      ReadME.md: modified 
+      
+      fun-problem.txt: unmodified  
+      
+   Part (c) 
+
+      ReadME.md: staged 
+      
+      fun-problem.txt: staged 
+      
+   Part (d) 
+
+      ReadME.md: modified 
+      
+      fun-problem.txt: modified
+      
+   Part (e) 
+
+      README.md: staged
+      
+      fun-problem.txt: untracked 
+      
+      fun-problem.txt is empty because it was checked out before it was 
+      staged for commit and changes were committed 
+      
+   Part (f) 
+
+      README.md has a modified status because it was changed after being 
+      staged for commit
+      
+  
+Problem 4
+
+   1. A list of structs consisting of a song name (string), a 
+      playlist/album (string) and track number (int). 
+      
+   2. A map with the key being the step in the baking process 
+      and the value being a string containing the text instruction 
+      
+   3. A map with they key being the file extension and the value being 
+      a string containing the list of programs that are able to read the
+      file. 
+      
+   4. A list of strings of the station IDs. 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   

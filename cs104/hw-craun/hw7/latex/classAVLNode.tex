@@ -1,0 +1,124 @@
+\hypertarget{classAVLNode}{\section{A\-V\-L\-Node$<$ Key, Value $>$ Class Template Reference}
+\label{classAVLNode}\index{A\-V\-L\-Node$<$ Key, Value $>$@{A\-V\-L\-Node$<$ Key, Value $>$}}
+}
+
+
+{\ttfamily \#include $<$avlbst.\-h$>$}
+
+Inheritance diagram for A\-V\-L\-Node$<$ Key, Value $>$\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classAVLNode}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAVLNode_a0c590cfe936353fe4d6eca380747d2d7}{A\-V\-L\-Node} (const Key \&key, const Value \&value, \hyperlink{classAVLNode}{A\-V\-L\-Node}$<$ Key, Value $>$ $\ast$parent)
+\item 
+virtual \hyperlink{classAVLNode_aaa13278d912e6dbd1147973213b61ec2}{$\sim$\-A\-V\-L\-Node} ()
+\item 
+char \hyperlink{classAVLNode_a98998d2f9be815c9775dddd0cf950a9a}{get\-Balance} () const 
+\item 
+void \hyperlink{classAVLNode_a5edf25a95b444da26b20ad1546ac31a9}{set\-Balance} (char balance)
+\item 
+void \hyperlink{classAVLNode_aa2bc7512704adb240d8e1c18c1c15853}{update\-Balance} (char diff)
+\item 
+virtual \hyperlink{classAVLNode}{A\-V\-L\-Node}$<$ Key, Value $>$ $\ast$ \hyperlink{classAVLNode_a192664222857753573eba15c6e9b6205}{get\-Parent} () const override
+\item 
+virtual \hyperlink{classAVLNode}{A\-V\-L\-Node}$<$ Key, Value $>$ $\ast$ \hyperlink{classAVLNode_af681acf83cebd11fb1083262b8100c70}{get\-Left} () const override
+\item 
+virtual \hyperlink{classAVLNode}{A\-V\-L\-Node}$<$ Key, Value $>$ $\ast$ \hyperlink{classAVLNode_ac57cebda2c1b448d22e00dcb9248cfb8}{get\-Right} () const override
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classAVLNode_afa3bbeb9d7bc41b5fee49c23d5bb298a}{char {\bfseries balance\-\_\-}}\label{classAVLNode_afa3bbeb9d7bc41b5fee49c23d5bb298a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Key, typename Value$>$class A\-V\-L\-Node$<$ Key, Value $>$}
+
+A special kind of node for an A\-V\-L tree, which adds the balance as a data member, plus other additional helper functions. You do N\-O\-T need to implement any functionality or add additional data members or helper functions. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classAVLNode_a0c590cfe936353fe4d6eca380747d2d7}{\index{A\-V\-L\-Node@{A\-V\-L\-Node}!A\-V\-L\-Node@{A\-V\-L\-Node}}
+\index{A\-V\-L\-Node@{A\-V\-L\-Node}!AVLNode@{A\-V\-L\-Node}}
+\subsubsection[{A\-V\-L\-Node}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Key , typename Value $>$ {\bf A\-V\-L\-Node}$<$ Key, Value $>$\-::{\bf A\-V\-L\-Node} (
+\begin{DoxyParamCaption}
+\item[{const Key \&}]{key, }
+\item[{const Value \&}]{value, }
+\item[{{\bf A\-V\-L\-Node}$<$ Key, Value $>$ $\ast$}]{parent}
+\end{DoxyParamCaption}
+)}}\label{classAVLNode_a0c590cfe936353fe4d6eca380747d2d7}
+Constructor for an \hyperlink{classAVLNode}{A\-V\-L\-Node}. Nodes are initialized with a balance of 0. \hypertarget{classAVLNode_aaa13278d912e6dbd1147973213b61ec2}{\index{A\-V\-L\-Node@{A\-V\-L\-Node}!$\sim$\-A\-V\-L\-Node@{$\sim$\-A\-V\-L\-Node}}
+\index{$\sim$\-A\-V\-L\-Node@{$\sim$\-A\-V\-L\-Node}!AVLNode@{A\-V\-L\-Node}}
+\subsubsection[{$\sim$\-A\-V\-L\-Node}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Key , typename Value $>$ {\bf A\-V\-L\-Node}$<$ Key, Value $>$\-::$\sim${\bf A\-V\-L\-Node} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classAVLNode_aaa13278d912e6dbd1147973213b61ec2}
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classAVLNode_a98998d2f9be815c9775dddd0cf950a9a}{\index{A\-V\-L\-Node@{A\-V\-L\-Node}!get\-Balance@{get\-Balance}}
+\index{get\-Balance@{get\-Balance}!AVLNode@{A\-V\-L\-Node}}
+\subsubsection[{get\-Balance}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Key , class Value $>$ char {\bf A\-V\-L\-Node}$<$ Key, Value $>$\-::get\-Balance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classAVLNode_a98998d2f9be815c9775dddd0cf950a9a}
+A getter for the balance of a \hyperlink{classAVLNode}{A\-V\-L\-Node}. \hypertarget{classAVLNode_af681acf83cebd11fb1083262b8100c70}{\index{A\-V\-L\-Node@{A\-V\-L\-Node}!get\-Left@{get\-Left}}
+\index{get\-Left@{get\-Left}!AVLNode@{A\-V\-L\-Node}}
+\subsubsection[{get\-Left}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Key , typename Value $>$ {\bf A\-V\-L\-Node}$<$ Key, Value $>$ $\ast$ {\bf A\-V\-L\-Node}$<$ Key, Value $>$\-::get\-Left (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}}\label{classAVLNode_af681acf83cebd11fb1083262b8100c70}
+Getter function for the left child. Used since the node inherits from a base node. 
+
+Reimplemented from \hyperlink{classNode_a2c142346d13ce08214ebee5ab76fbf72}{Node$<$ Key, Value $>$}.
+
+\hypertarget{classAVLNode_a192664222857753573eba15c6e9b6205}{\index{A\-V\-L\-Node@{A\-V\-L\-Node}!get\-Parent@{get\-Parent}}
+\index{get\-Parent@{get\-Parent}!AVLNode@{A\-V\-L\-Node}}
+\subsubsection[{get\-Parent}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Key , typename Value $>$ {\bf A\-V\-L\-Node}$<$ Key, Value $>$ $\ast$ {\bf A\-V\-L\-Node}$<$ Key, Value $>$\-::get\-Parent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}}\label{classAVLNode_a192664222857753573eba15c6e9b6205}
+Getter function for the parent. Used since the node inherits from a base node. 
+
+Reimplemented from \hyperlink{classNode_a89780f3166c5d3aad0bd2960ce65f7a8}{Node$<$ Key, Value $>$}.
+
+\hypertarget{classAVLNode_ac57cebda2c1b448d22e00dcb9248cfb8}{\index{A\-V\-L\-Node@{A\-V\-L\-Node}!get\-Right@{get\-Right}}
+\index{get\-Right@{get\-Right}!AVLNode@{A\-V\-L\-Node}}
+\subsubsection[{get\-Right}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Key , typename Value $>$ {\bf A\-V\-L\-Node}$<$ Key, Value $>$ $\ast$ {\bf A\-V\-L\-Node}$<$ Key, Value $>$\-::get\-Right (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}}\label{classAVLNode_ac57cebda2c1b448d22e00dcb9248cfb8}
+Getter function for the right child. Used since the node inherits from a base node. 
+
+Reimplemented from \hyperlink{classNode_ae9aabb17b3555af256dc9ae091c0bb39}{Node$<$ Key, Value $>$}.
+
+\hypertarget{classAVLNode_a5edf25a95b444da26b20ad1546ac31a9}{\index{A\-V\-L\-Node@{A\-V\-L\-Node}!set\-Balance@{set\-Balance}}
+\index{set\-Balance@{set\-Balance}!AVLNode@{A\-V\-L\-Node}}
+\subsubsection[{set\-Balance}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Key , class Value $>$ void {\bf A\-V\-L\-Node}$<$ Key, Value $>$\-::set\-Balance (
+\begin{DoxyParamCaption}
+\item[{char}]{balance}
+\end{DoxyParamCaption}
+)}}\label{classAVLNode_a5edf25a95b444da26b20ad1546ac31a9}
+A setter for the balance of a \hyperlink{classAVLNode}{A\-V\-L\-Node}. \hypertarget{classAVLNode_aa2bc7512704adb240d8e1c18c1c15853}{\index{A\-V\-L\-Node@{A\-V\-L\-Node}!update\-Balance@{update\-Balance}}
+\index{update\-Balance@{update\-Balance}!AVLNode@{A\-V\-L\-Node}}
+\subsubsection[{update\-Balance}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Key , class Value $>$ void {\bf A\-V\-L\-Node}$<$ Key, Value $>$\-::update\-Balance (
+\begin{DoxyParamCaption}
+\item[{char}]{diff}
+\end{DoxyParamCaption}
+)}}\label{classAVLNode_aa2bc7512704adb240d8e1c18c1c15853}
+Adds diff to the balance of a \hyperlink{classAVLNode}{A\-V\-L\-Node}. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+avlbst.\-h\end{DoxyCompactItemize}

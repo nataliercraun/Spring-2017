@@ -1,0 +1,113 @@
+\hypertarget{classBinarySearchTree_1_1iterator}{\section{Binary\-Search\-Tree$<$ Key, Value $>$\-:\-:iterator Class Reference}
+\label{classBinarySearchTree_1_1iterator}\index{Binary\-Search\-Tree$<$ Key, Value $>$\-::iterator@{Binary\-Search\-Tree$<$ Key, Value $>$\-::iterator}}
+}
+
+
+{\ttfamily \#include $<$bst.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBinarySearchTree_1_1iterator_aaf03ac21b275451f4d849688955d9fe8}{iterator} ()
+\item 
+\hyperlink{classBinarySearchTree_1_1iterator_ad2d047d6e1fda6f9e74a568fd0539d34}{iterator} (\hyperlink{classNode}{Node}$<$ Key, Value $>$ $\ast$ptr)
+\item 
+std\-::pair$<$ Key, Value $>$ \& \hyperlink{classBinarySearchTree_1_1iterator_ad327f8b97a8c9a2ad6ff67c012b11334}{operator$\ast$} ()
+\item 
+std\-::pair$<$ Key, Value $>$ $\ast$ \hyperlink{classBinarySearchTree_1_1iterator_a3e027f7cf4dd6f3955cdc10bf4cf21fd}{operator-\/$>$} ()
+\item 
+bool \hyperlink{classBinarySearchTree_1_1iterator_a71501a55f16e20da83f94fb322ebdba8}{operator==} (const \hyperlink{classBinarySearchTree_1_1iterator}{iterator} \&rhs) const 
+\item 
+bool \hyperlink{classBinarySearchTree_1_1iterator_a5f767164de9e1e7f7c4fd05c1b575e3d}{operator!=} (const \hyperlink{classBinarySearchTree_1_1iterator}{iterator} \&rhs) const 
+\item 
+\hyperlink{classBinarySearchTree_1_1iterator}{iterator} \& \hyperlink{classBinarySearchTree_1_1iterator_a02e4ae80899345cca597757cf41a803d}{operator=} (const \hyperlink{classBinarySearchTree_1_1iterator}{iterator} \&rhs)
+\item 
+\hyperlink{classBinarySearchTree_1_1iterator}{iterator} \& \hyperlink{classBinarySearchTree_1_1iterator_a9ed876ed9daa9319fa7260453c522d9c}{operator++} ()
+\item 
+\hyperlink{classNode}{Node}$<$ Key, Value $>$ $\ast$ \hyperlink{classBinarySearchTree_1_1iterator_addfcfe8fbc7bdaf74f694c6bb7dd2243}{get\-Successor} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classBinarySearchTree_1_1iterator_a2f3115c3d4accda5f09629bf74391243}{\hyperlink{classNode}{Node}$<$ Key, Value $>$ $\ast$ {\bfseries m\-Current}}\label{classBinarySearchTree_1_1iterator_a2f3115c3d4accda5f09629bf74391243}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Key, typename Value$>$class Binary\-Search\-Tree$<$ Key, Value $>$\-::iterator}
+
+An internal iterator class for traversing the contents of the B\-S\-T. T\-O\-D\-O\-: You must implement this! 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBinarySearchTree_1_1iterator_aaf03ac21b275451f4d849688955d9fe8}{\index{Binary\-Search\-Tree\-::iterator@{Binary\-Search\-Tree\-::iterator}!iterator@{iterator}}
+\index{iterator@{iterator}!BinarySearchTree::iterator@{Binary\-Search\-Tree\-::iterator}}
+\subsubsection[{iterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Key, typename Value$>$ {\bf Binary\-Search\-Tree}$<$ Key, Value $>$\-::iterator\-::iterator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classBinarySearchTree_1_1iterator_aaf03ac21b275451f4d849688955d9fe8}
+Initialize the internal members of the iterator. You can choose what kind of iterator the default constructor should create. \hypertarget{classBinarySearchTree_1_1iterator_ad2d047d6e1fda6f9e74a568fd0539d34}{\index{Binary\-Search\-Tree\-::iterator@{Binary\-Search\-Tree\-::iterator}!iterator@{iterator}}
+\index{iterator@{iterator}!BinarySearchTree::iterator@{Binary\-Search\-Tree\-::iterator}}
+\subsubsection[{iterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Key, typename Value$>$ {\bf Binary\-Search\-Tree}$<$ Key, Value $>$\-::iterator\-::iterator (
+\begin{DoxyParamCaption}
+\item[{{\bf Node}$<$ Key, Value $>$ $\ast$}]{ptr}
+\end{DoxyParamCaption}
+)}}\label{classBinarySearchTree_1_1iterator_ad2d047d6e1fda6f9e74a568fd0539d34}
+Initialize the internal members of the iterator. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classBinarySearchTree_1_1iterator_addfcfe8fbc7bdaf74f694c6bb7dd2243}{\index{Binary\-Search\-Tree\-::iterator@{Binary\-Search\-Tree\-::iterator}!get\-Successor@{get\-Successor}}
+\index{get\-Successor@{get\-Successor}!BinarySearchTree::iterator@{Binary\-Search\-Tree\-::iterator}}
+\subsubsection[{get\-Successor}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Key, typename Value$>$ {\bf Node}$<$ Key, Value $>$ $\ast$ {\bf Binary\-Search\-Tree}$<$ Key, Value $>$\-::iterator\-::get\-Successor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classBinarySearchTree_1_1iterator_addfcfe8fbc7bdaf74f694c6bb7dd2243}
+Returns the next largest value after the current node \hypertarget{classBinarySearchTree_1_1iterator_a5f767164de9e1e7f7c4fd05c1b575e3d}{\index{Binary\-Search\-Tree\-::iterator@{Binary\-Search\-Tree\-::iterator}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!BinarySearchTree::iterator@{Binary\-Search\-Tree\-::iterator}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Key, typename Value$>$ bool {\bf Binary\-Search\-Tree}$<$ Key, Value $>$\-::iterator\-::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf iterator} \&}]{rhs}
+\end{DoxyParamCaption}
+) const}}\label{classBinarySearchTree_1_1iterator_a5f767164de9e1e7f7c4fd05c1b575e3d}
+Checks if 'this' iterator's internals have a different value as 'rhs' \hypertarget{classBinarySearchTree_1_1iterator_ad327f8b97a8c9a2ad6ff67c012b11334}{\index{Binary\-Search\-Tree\-::iterator@{Binary\-Search\-Tree\-::iterator}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!BinarySearchTree::iterator@{Binary\-Search\-Tree\-::iterator}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Key, typename Value$>$ std\-::pair$<$ Key, Value $>$ \& {\bf Binary\-Search\-Tree}$<$ Key, Value $>$\-::iterator\-::operator$\ast$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classBinarySearchTree_1_1iterator_ad327f8b97a8c9a2ad6ff67c012b11334}
+Provides access to the item. \hypertarget{classBinarySearchTree_1_1iterator_a9ed876ed9daa9319fa7260453c522d9c}{\index{Binary\-Search\-Tree\-::iterator@{Binary\-Search\-Tree\-::iterator}!operator++@{operator++}}
+\index{operator++@{operator++}!BinarySearchTree::iterator@{Binary\-Search\-Tree\-::iterator}}
+\subsubsection[{operator++}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Key, typename Value$>$ {\bf Binary\-Search\-Tree}$<$ Key, Value $>$\-::{\bf iterator} \& {\bf Binary\-Search\-Tree}$<$ Key, Value $>$\-::iterator\-::operator++ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classBinarySearchTree_1_1iterator_a9ed876ed9daa9319fa7260453c522d9c}
+Advances the iterator's location using an in-\/order traversal. \hypertarget{classBinarySearchTree_1_1iterator_a3e027f7cf4dd6f3955cdc10bf4cf21fd}{\index{Binary\-Search\-Tree\-::iterator@{Binary\-Search\-Tree\-::iterator}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!BinarySearchTree::iterator@{Binary\-Search\-Tree\-::iterator}}
+\subsubsection[{operator-\/$>$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Key, typename Value$>$ std\-::pair$<$ Key, Value $>$ $\ast$ {\bf Binary\-Search\-Tree}$<$ Key, Value $>$\-::iterator\-::operator-\/$>$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classBinarySearchTree_1_1iterator_a3e027f7cf4dd6f3955cdc10bf4cf21fd}
+Provides access to the address of the item. \hypertarget{classBinarySearchTree_1_1iterator_a02e4ae80899345cca597757cf41a803d}{\index{Binary\-Search\-Tree\-::iterator@{Binary\-Search\-Tree\-::iterator}!operator=@{operator=}}
+\index{operator=@{operator=}!BinarySearchTree::iterator@{Binary\-Search\-Tree\-::iterator}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Key, typename Value$>$ {\bf Binary\-Search\-Tree}$<$ Key, Value $>$\-::{\bf iterator} \& {\bf Binary\-Search\-Tree}$<$ Key, Value $>$\-::iterator\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf iterator} \&}]{rhs}
+\end{DoxyParamCaption}
+)}}\label{classBinarySearchTree_1_1iterator_a02e4ae80899345cca597757cf41a803d}
+Sets one iterator equal to another iterator. \hypertarget{classBinarySearchTree_1_1iterator_a71501a55f16e20da83f94fb322ebdba8}{\index{Binary\-Search\-Tree\-::iterator@{Binary\-Search\-Tree\-::iterator}!operator==@{operator==}}
+\index{operator==@{operator==}!BinarySearchTree::iterator@{Binary\-Search\-Tree\-::iterator}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Key, typename Value$>$ bool {\bf Binary\-Search\-Tree}$<$ Key, Value $>$\-::iterator\-::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf iterator} \&}]{rhs}
+\end{DoxyParamCaption}
+) const}}\label{classBinarySearchTree_1_1iterator_a71501a55f16e20da83f94fb322ebdba8}
+Checks if 'this' iterator's internals have the same value as 'rhs' 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+bst.\-h\end{DoxyCompactItemize}

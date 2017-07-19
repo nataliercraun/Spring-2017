@@ -1,0 +1,78 @@
+Natalie Craun 
+Student ID: 5986500254
+Lecture: Tues/Thurs 8:00 am 
+
+Problem 1
+
+   Part (a) 
+
+      1, 4, 8
+
+   Part (b) 
+
+      2, 3, 4, 5
+
+   Part (c)
+   
+      2 
+      
+   Part (d) 
+   
+      2, 4 
+      
+Problem 2 
+
+   Part (a) 
+   
+      Git Bash (Windows), Terminal (Mac or Linux)  
+      
+   Part (b) 
+   
+      1. git add hw1q2b.cpp
+      2. git log -3 
+      
+   Part (c) 
+   
+      Because you did not enter a commit message ( -m "_____"),
+      git will open the OS's default text editor, prompting you for a 
+      message.
+      
+Problem 4
+
+   mat array of arrays contains:  
+   
+   int r1[] = {1, 2, 3, 4} 
+   int r2[] = {10, 6, 7, 8} 
+   int r3[] = {31, 10, 11, 12} 
+   
+   (call tree explanation in PDF) 
+   
+  
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+   
+ 
+
+
